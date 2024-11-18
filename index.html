@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--framwork de bootstrap-->
+
+</head>
+<body>
+    <div class="container">
+        <form action="/recibirform.html" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="tDoc">Tipo de Documento</label><br>
+                <select>
+                    <option value="">Seleccione</option>
+                    <option value="CC">CC</option> 
+                    <option value="NIT">NIT</option>
+                    <option value="TI">TI</option>
+                    <option value="C-EX">C-EX</option>
+                    <option value="PAS">PAS</option>
+                </select><br><br>
+                                       
+            <label for="nDoc">*Numero de Documento</label><br>
+                <input type="text" id="nDoc" name="nDoc" required> <br><br>
+            <label for="nombres">Nombres</label><br>
+                <input type="text" id="nombres" name="nombres"> <br><br>
+            <label for="pApellido">1er. Apellido</label><br>
+                <input type="text" id="pApellido" name="pApellido"><br><br>
+            <label for="sApellido">2do. Apellido</label><br>
+                <input type="text" id="sApellido" name="sApellido"> <br><br>
+            <label for="email">Correo</label><br>
+                <input type="email" id="email"><br>
+            <label for="clave">Password</label><br>
+                <input type="password" id="password" disabled><br><br>
+            <label for="celular">Digite teléfono</label><br>
+                <input type="tel" maxlength="10"><br><br>  
+            <label for="Genero">Genero</label> <br>
+                <input type="radio" name="Genero" id="F" value="F"> Femenino
+                <input type="radio" name="Genero" id="M" value="M"> Masculino <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Gustos</legend>
+                <label for="">Hobbies</label><br>
+                <input type="checkbox" name="Hobby1" id="Hobby1">Musica <br>
+                <input type="checkbox" name="Hobby2" id="Hobby2">Pintar <br>
+                <input type="checkbox" name="Hobby3" id="Hobby3">Deporte <br>
+                <input type="checkbox" name="Hobby4" id="Hobby4">Leer <br>
+                <input type="checkbox" name="Hobby5" id="Hobby5">Bailar <br><br>
+            <label for="Pasion">Que le apasiona?</label>
+            <textarea cols="30" rows="5" name="Pasion" id="Pasion">Describa:</textarea><br>
+            <br>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Pais</legend>
+                <select name="Pais" id="Pais" multiple size="2">Nacionalidad
+                    <option value="">Seleccione...</option>
+                    <option value="col">Colombiana</option>
+                    <option value="ven">Venezolana</option>
+                    <option value="musul">Musulman</option>
+                    <option value="jud">Judio</option>
+                    <option value="chi">Chileno</option>
+                    </select>
+            </fieldset>
+            <br>
+            <label for="ciu">Ciudad</label><br>
+                <input list="ciu">
+                <datalist id="ciu">
+                    <option value="Medellín">Medellín</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Barrancabermejoa">Barrancabermejoa</option>
+                    <option value="Sincelejo">Sincelejo</option>
+                    <option value="Bello">Bello</option>
+
+                </datalist><br><br>
+            <label for="file">Hojal de vida</label>
+                <input type="file"><br><br>
+            <label for="date">Elija la fehca</label><br>
+                <input type="date">
+            <br><br>
+
+            <button type="button" onclick="alert('hola hermos@')">Saludar</button><br>
+            <input type="image" src="/IMG/images.jfif" alt="submit" width="50" height="50">
+        </form>
+    </div>
+   
+    <!--framework de boostrap javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
